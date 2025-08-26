@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: telegram-date-bot
     env: python
     plan: free
