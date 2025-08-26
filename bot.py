@@ -14,7 +14,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-# هندلر دستور /date
+# دستور /date
 async def date_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     tz = pytz.timezone("Asia/Tehran")
 
@@ -33,7 +33,6 @@ async def date_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(msg)
 
-# استارت ربات
 def main():
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("date", date_command))
