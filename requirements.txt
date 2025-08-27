@@ -1,2 +1,2 @@
 python-telegram-bot==20.3
-jdatetime==1.0.0
+persiantools==2.6.0
