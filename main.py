@@ -6,11 +6,9 @@ from khayyam import JalaliDatetime
 TOKEN = "8345723232:AAGNNNYZdcHG2snUUaBaa2Ss_QS-X4h3oLk"
 
 async def date_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    # تاریخ میلادی
     gregorian = datetime.now()
     gregorian_str = gregorian.strftime("%A, %B %d, %Y")
 
-    # تاریخ شمسی
     jalali = JalaliDatetime.now()
     jalali_str = jalali.strftime("%A %d %B %Y")
 
